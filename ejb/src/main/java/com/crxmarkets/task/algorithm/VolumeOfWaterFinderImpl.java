@@ -41,8 +41,10 @@ public class VolumeOfWaterFinderImpl implements VolumeOfWaterFinder {
         int count = 0;
         int minBorder = Math.min(unit.getWidthLeft(), unit.getWidthRight());
         for (int i = unit.getLeftBorder() + 1; i < unit.getRightBorder(); i++) {
-            count += minBorder - array[i];
-            array[i] = minBorder;
+            if (array[i] < minBorder) {
+                count += minBorder - array[i];
+                array[i] = minBorder;
+            }
         }
         LOGGER.debug("fillUnitsWithWater method ended with count of filled water: " + count);
         return count;

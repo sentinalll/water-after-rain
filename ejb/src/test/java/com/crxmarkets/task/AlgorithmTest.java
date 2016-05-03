@@ -28,6 +28,20 @@ public class AlgorithmTest {
     }
 
     @Test
+    public void testRelief3() {
+        int[] testArr = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 3};
+        int res = volumeOfWaterFinder.calculateVolume(testArr);
+        assertEquals("Must be 0", 1, res);
+    }
+
+    @Test
+    public void testRelief4() {
+        int[] testArr = new int[]{3, 2, 3, 4, 5, 6, 7, 8, 9};
+        int res = volumeOfWaterFinder.calculateVolume(testArr);
+        assertEquals("Must be 0", 1, res);
+    }
+
+    @Test
     public void testNoRightBorder() {
         int[] testArr = new int[]{7, 6, 5, 4, 3, 2, 1};
         int res = volumeOfWaterFinder.calculateVolume(testArr);
