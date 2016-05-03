@@ -1,15 +1,19 @@
-package com.crxmarketx.task.pojo;
+package com.crxmarkets.task.pojo;
 
 /**
  * Created by Roman on 03.05.2016.
  */
-public class Gap {
+public class Unit {
     int leftBorder;
     int rightBorder;
     int widthLeft;
     int widthRight;
 
-    public Gap() {
+    public Unit(int leftBorder, int rightBorder, int widthLeft, int widthRight) {
+        this.leftBorder = leftBorder;
+        this.rightBorder = rightBorder;
+        this.widthLeft = widthLeft;
+        this.widthRight = widthRight;
     }
 
     public int getLeftBorder() {
@@ -46,7 +50,7 @@ public class Gap {
 
     @Override
     public String toString() {
-        return "Gap{" +
+        return "Unit{" +
                 "leftBorder=" + leftBorder +
                 ", rightBorder=" + rightBorder +
                 '}';

@@ -1,10 +1,8 @@
-package com.crxmarketx.task.controller;
+package com.crxmarkets.task.controller;
 
 import javax.ejb.Local;
 import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 /**
  * Created by Roman on 02.05.2016.
@@ -17,10 +15,10 @@ import java.util.List;
 public interface Resource {
 
     @POST
-    @Path("/array")
-    Integer postArray(String json);
+    @Path("/surface")
+    Response postSurfaceRelief(int[] relief);
 
     @GET
-    @Path("/books/{isbn}")
-    String getBook(@PathParam("isbn") String isbn);
+    @Path("/heartbeat")
+    Response getHeartBeat();
 }

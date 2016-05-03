@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>water-after-rain</artifactId>
@@ -10,4 +10,15 @@
     <packaging>war</packaging>
 
     <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.crxmarketx.task</groupId>
+            <artifactId>water-after-rain-ejb</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>water-after-rain</finalName>
+    </build>
 </project>

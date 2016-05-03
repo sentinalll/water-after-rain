@@ -1,4 +1,4 @@
-package com.crxmarketx.task.algorithm;
+package com.crxmarkets.task.algorithm;
 
 import javax.ejb.Local;
 
