@@ -1,4 +1,4 @@
-package com.crxmarkets.task.pojo;
+package com.crxmarkets.service;
 
 /**
  * Created by Roman on 03.05.2016.
