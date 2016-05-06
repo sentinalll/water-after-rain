@@ -1,4 +1,4 @@
-package com.crxmarkets;
+package com.crxmarkets.unit;
 
 import com.crxmarkets.service.VolumeCalculator;
 import com.crxmarkets.service.VolumeCalculatorImpl;
@@ -14,9 +14,6 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;
 
-/**
- * Created by Roman on 03.05.2016.
- */
 public class AlgorithmTest {
 
   VolumeCalculator volumeCalculator;
