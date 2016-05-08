@@ -6,11 +6,17 @@ import org.apache.logging.log4j.Logger;
 import javax.ejb.Stateless;
 import java.util.List;
 
+
 @Stateless
 public class VolumeCalculatorImpl implements VolumeCalculator {
 
     private static final Logger LOGGER = LogManager.getLogger(VolumeCalculatorImpl.class);
 
+    /**
+     * @param surface list of altitude
+     *
+     * @return calculated volume or 0 if input is {@code null} or empty list.
+     */
     public Integer calculateVolume(List<Integer> surface) {
         LOGGER.debug("calculateVolume method started");
         if (LOGGER.isTraceEnabled()) {
