@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface VolumeCalculator {
 
-  Integer calculateVolume(List<Integer> surface);
+    Integer calculateVolume(List<Integer> surface);
 }
