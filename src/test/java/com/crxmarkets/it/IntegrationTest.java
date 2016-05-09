@@ -1,6 +1,6 @@
 package com.crxmarkets.it;
 
-import com.crxmarkets.controller.RequestDTO;
+import com.crxmarkets.web.RequestDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;

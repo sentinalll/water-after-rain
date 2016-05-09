@@ -1,4 +1,4 @@
-package com.crxmarkets.controller;
+package com.crxmarkets.web;
 
 
 import com.crxmarkets.service.VolumeCalculator;
@@ -38,7 +38,7 @@ public class ResourceController {
     @GET
     @Path("/heartbeat")
     public Response getHeartBeat() {
-        return Response.ok().build();
+        return Response.ok("OK").build();
     }
 
 }

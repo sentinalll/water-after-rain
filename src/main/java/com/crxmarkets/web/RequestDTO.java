@@ -1,4 +1,4 @@
-package com.crxmarkets.controller;
+package com.crxmarkets.web;
 
 import java.util.List;
 
